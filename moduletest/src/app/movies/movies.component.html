@@ -1,0 +1,10 @@
+<div class="col-md-4 offset-4 mt-5 ">
+<input type="text" name="Search by movie name" id="search by movie name" class="form-control" placeholder="search by movie name " #text="ngModel" ngModel required>
+</div>
+<span *ngFor="let movie  of Movies">
+        <img src="{{movie.imgUrl}}" alt="" >
+        <h1>
+            {{movie.name}}
+        </h1>
+        
+</span>
